@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navBar {
+    background-color: #EDCCFF;
+    width: 100vw;
+    height: 20vh;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoMenu {
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+.logoMenuBrandName {
+    color: #141D98;
+    height: 90%;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menuItem {
+    color: #141D98;
+    font-size: 3vh;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logoMenuBrandName:hover {
+    color: #BF9C80;
+    transition: all 2s;
+}
+
+.logoMenuBrandName:not(:hover) {
+    color: #141D98;
+    transition: all 2s;
+}
+
+.menuItem:hover {
+    color: #BF9C80;
+    transition: all 2s;
+}
+
+.menuItem:not(:hover) {
+    color: #141D98;
+    transition: all 2s;
+}
+
+.menuItem {
+    margin: 2vw;
+}
+
+.logoMenuBrandName {
+    margin: 0.1vw;
+}
+
+.logoMenuImg {
+    height: 15vh;
+}
