@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 3vw;
+    margin-right: 2vw;
 }
 
 .logoMenuBrandName {
@@ -61,7 +61,7 @@
 }
 
 .menuItem {
-    margin: 2vw;
+    margin: 1vw;
 }
 
 .logoMenuBrandName {

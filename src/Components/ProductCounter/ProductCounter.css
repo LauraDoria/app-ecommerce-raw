@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.productCounter {
+    height: 8vh;
+    width: 30vh;
+    background-color: #141D98;
+    border-radius: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.productCounter p {
+    font-size: 3vh;
+    color: #EDCCFF;
+}
+
+.productCounterButton {
+    height: 5vh;
+    width: 5vh;
+    background-color: #EDCCFF;
+    border: none;
+    color: #141D98;
+    font-size: 3vh;
+    border-radius: 8vh;
+}
+
+.productCounterButton:hover {
+    background-color: #12B5E3;
+    color: #FCB580;
+    transition: all 2s;
+}
+
+.productCounterButton:not(:hover) {
+    background-color: #EDCCFF;
+    color: #141D98;
+    transition: all 2s;
+}

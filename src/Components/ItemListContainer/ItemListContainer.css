@@ -1,8 +1,38 @@
+.selectedItemsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .itemListContainer {
-    color: #EDCCFF;
-    height: 30vh;
+    color: #141D98;
     font-family: piepie, sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 5vh;
+    font-size: 5vh;
+    margin: 5vh;
+}
+
+.addToCartButton {
+    background-color: #141D98;
+    border: none;
+    color: #EDCCFF;
+    font-size: 3vh;
+    border-radius: 8vh;
+    padding: 2vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5vh;
+}
+
+.addToCartButton:hover {
+    background-color: #12B5E3;
+    transition: all 2s;
+}
+
+.addToCartButton:not(:hover) {
+    background-color: #141D98;
+    transition: all 2s;
 }
