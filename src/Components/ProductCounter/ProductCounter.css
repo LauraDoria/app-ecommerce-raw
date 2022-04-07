@@ -15,11 +15,17 @@
 }
 
 .productCounter p {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 3vh;
     color: #EDCCFF;
 }
 
 .productCounterButton {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     height: 5vh;
     width: 5vh;
     background-color: #EDCCFF;
