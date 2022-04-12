@@ -3,6 +3,7 @@ import './Components/NavBar/NavBar';
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import MercadoLibreItemListContainer from './Components/MercadoLibreItemListContainer/MercadoLibreItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <NavBar />
         {/*<ItemListContainer message='Desafío Clase 4' />*/}
         <MercadoLibreItemListContainer title='Mercado Libre'/>
+        <ItemDetailContainer />
         <img src='./Images/logo-icon.svg' className="App-logo" alt="logo" />
       </header>
     </div>

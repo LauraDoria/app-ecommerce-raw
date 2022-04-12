@@ -1,0 +1,33 @@
+.itemDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemDetailImage img {
+    height: 25vh;
+}
+
+.itemDetailDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemDetailDetail h2 {
+    color: #141D98;
+    font-size: 3vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itemDetailDetail p {
+    color: #141D98;
+    font-size: 3vh;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
