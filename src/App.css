@@ -9,8 +9,41 @@
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+
+.appButtonContainer {
+  padding-top: 5vh;
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.appButton {
+  font-family: piepie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #EDCCFF;
+  border: none;
+  color: #141D98;
+  font-size: 5vh;
+  border-radius: 8vh;
+  text-decoration: none;
+  padding: 1.5vh;
+}
+
+.appButton:hover {
+  background-color: #12B5E3;
+  transition: all 2s;
+}
+
+.appButton:not(:hover) {
+  background-color: #EDCCFF;
+  transition: all 2s;
 }
 
 .App-logo {

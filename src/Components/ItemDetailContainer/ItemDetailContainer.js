@@ -2,6 +2,7 @@ import './ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { getProductInfo } from '../../asyncmockup';
+import ProductCounter from '../ProductCounter/ProductCounter';
 
 const ItemDetailContainer = () => {
 

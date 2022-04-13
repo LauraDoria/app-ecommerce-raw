@@ -1,3 +1,14 @@
+.itemDetailContainerShadow {
+    box-shadow: 15px 15px 30px 2px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10vh;
+}
+
 .itemDetail {
     display: flex;
     flex-direction: row;
@@ -5,29 +16,116 @@
     align-items: center;
 }
 
+.itemDetailImage {
+    width: 40vw;
+    height: 90vh;
+    background-color: #12B5E3;
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .itemDetailImage img {
-    height: 25vh;
+    height: 65vh;
+}
+
+.itemDetailImage img:hover {
+    transform: translateY(-5%); 
+    transition: all 1s;
+}
+
+.itemDetailImage img:not(:hover) {
+    transform: translateY(5%); 
+    transition: all 1s;
 }
 
 .itemDetailDetail {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    background-color: #EDCCFF;
+    border-top-right-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
+
+.itemDetailDetailTitle {
+    color: #141D98;
+    font-size: 4.5vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 90%;
+    max-width: 90%;
+    text-align: center;
+}
+
+.itemDetailDetailFilter {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.itemDetailDetail h2 {
+.itemDetailDetailFilter p {
     color: #141D98;
-    font-size: 3vh;
+    font-size: 2vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #12B5E3;
+    border-radius: 4vh;
+    padding: 1.5vh;
+    margin: 1vh;
+}
+
+.itemDetailDetailSubtitle {
+    color: #141D98;
+    font-size: 2.5vh;
     font-family: piepie, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.itemDetailDetail p {
+.itemDetailDetailTipoProducto {
     color: #141D98;
-    font-size: 3vh;
+    font-size: 2vh;
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
+    min-width: 85%;
+    max-width: 85%;
+    text-align: justify;
 }
+
+.addToCartButton {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FCB580;
+    border: none;
+    color: #141D98;
+    font-size: 3vh;
+    border-radius: 8vh;
+    text-decoration: none;
+    padding: 1.5vh;
+    margin: 3vh;
+  }
+  
+  .addToCartButton:hover {
+    background-color: #EDCCFF;
+    box-shadow: 10px 10px 15px 2px rgba(0,0,100,.25);
+    transition: all 2s;
+  }
+  
+  .addToCartButton:not(:hover) {
+    background-color: #FCB580;
+    transition: all 2s;
+  }

@@ -8,22 +8,32 @@ const addToCart = () => {
 const ItemDetail = ({productDetails}) => {
 
     return(
-        <div className='itemDetail'>
-            <div className='itemDetailImage'>
-                <img src={productDetails.imagen} alt={productDetails.nombre}></img>
+        <div class='itemDetailContainerShadow'>
+                <div class='itemDetailImage'>
+                    <img src={productDetails.imagenGrande} alt={productDetails.nombre}></img>
+                    <ProductCounter stock={20} />
+                    <button class='addToCartButton' onClick={addToCart}>Agregar al carrito</button>
+                </div>
+                <div class='itemDetailDetailContainer'>
+                    <div class='itemDetailDetail'>
+                        <h3 class='itemDetailDetailTitle'>{productDetails.nombre} {productDetails.presentacion} | ${productDetails.precio}</h3>
+                        <div class='itemDetailDetailFilter'>
+                            <p class='itemDetailDetailZeroWaste'>Zero Waste: {productDetails.zeroWaste}</p>
+                            <p class='itemDetailDetailTipoCabello'>Tipo Cabello: {productDetails.tipoCabello}</p>
+                            <p class='itemDetailDetailProductoUsos'>Tipo Producto: {productDetails.usos}</p>
+                        </div>
+                        <p class='itemDetailDetailTipoProducto'>{productDetails.detalle}</p>
+                        <h3 class='itemDetailDetailSubtitle'>Modo de Uso</h3>
+                        <p class='itemDetailDetailTipoProducto'>{productDetails.modoUso}</p>
+                        <h3 class='itemDetailDetailSubtitle'>INCI</h3>
+                        <p class='itemDetailDetailTipoProducto'>{productDetails.inci}</p>
+                    </div>
+                </div>
             </div>
-            <div className='itemDetailDetail'>
-                <h3 className='itemDetailDetailTitle'>{productDetails.nombre}</h3>
-                <p className='itemDetailDetailPrice'>{productDetails.precio}</p>
-                <p className='itemDetailDetailPresentation'>{productDetails.presentacion}</p>
-                <p className='itemDetailDetailZeroWaste'>{productDetails.zeroWaste}</p>
-                <p className='itemDetailDetailTipoProducto'>{productDetails.zeroWaste}</p>
-                <ProductCounter stock={20}/>
-                <button className='addToCartButton' onClick={addToCart}>Agregar al carrito</button>
-            </div>
-        </div>
     );
 
 };
 
 export default ItemDetail;
+
+            

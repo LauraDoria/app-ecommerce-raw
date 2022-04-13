@@ -1,0 +1,319 @@
+/*Componente Item Detail Container*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.itemDetailContainer {
+    background-color: #FCB580;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Componente Item Detail*/
+
+.itemDetailContainerShadow {
+    box-shadow: 15px 15px 30px 2px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10vh;
+}
+
+.itemDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemDetailImage {
+    width: 40vw;
+    height: 90vh;
+    background-color: #12B5E3;
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemDetailImage img {
+    height: 65vh;
+}
+
+.itemDetailImage img:hover {
+    transform: translateY(-5%); 
+    transition: all 1s;
+}
+
+.itemDetailImage img:not(:hover) {
+    transform: translateY(5%); 
+    transition: all 1s;
+}
+
+.itemDetailDetail {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    background-color: #EDCCFF;
+    border-top-right-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
+
+.itemDetailDetailTitle {
+    color: #141D98;
+    font-size: 4.5vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 90%;
+    max-width: 90%;
+    text-align: center;
+}
+
+.itemDetailDetailFilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemDetailDetailFilter p {
+    color: #141D98;
+    font-size: 2vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #12B5E3;
+    border-radius: 4vh;
+    padding: 1.5vh;
+    margin: 1vh;
+}
+
+.itemDetailDetailSubtitle {
+    color: #141D98;
+    font-size: 2.5vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itemDetailDetailTipoProducto {
+    color: #141D98;
+    font-size: 2vh;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 85%;
+    max-width: 85%;
+    text-align: justify;
+}
+
+.addToCartButton {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FCB580;
+    border: none;
+    color: #141D98;
+    font-size: 3vh;
+    border-radius: 8vh;
+    text-decoration: none;
+    padding: 1.5vh;
+    margin: 3vh;
+  }
+  
+  .addToCartButton:hover {
+    background-color: #EDCCFF;
+    box-shadow: 10px 10px 15px 2px rgba(0,0,100,.25);
+    transition: all 2s;
+  }
+  
+  .addToCartButton:not(:hover) {
+    background-color: #FCB580;
+    transition: all 2s;
+  }
+
+/*Componente Product Counter*/
+
+.productCounter {
+    height: 7vh;
+    width: 30vh;
+    background-color: #FCB580;
+    border-radius: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.productCounter p {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vh;
+    color: #141D98;
+}
+
+.productCounterButton {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 4vh;
+    width: 4vh;
+    background-color: #141D98;
+    border: none;
+    color: #12B5E3;
+    font-size: 3vh;
+    border-radius: 8vh;
+}
+
+.productCounterButton:hover {
+    background-color: #EDCCFF;
+    color: #141D98;
+    box-shadow: 7px 7px 10px 2px rgba(0,0,100,.25);
+    transition: all 2s;
+}
+
+.productCounterButton:not(:hover) {
+    background-color: #141D98;
+    color: #12B5E3;
+    transition: all 2s;
+}
+
+/*Componente Item List Container*/
+
+.itemListContainer {
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #FCB580;
+}
+
+.itemListContainerTitle {
+    color: #141D98;
+    font-size: 10vh;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    margin-bottom: 5vh;
+}
+
+/*Componente Item*/
+
+.itemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Componente Item*/
+
+.itemCard {
+    height: 50vh;
+    width: 20vw;
+    background-color: #141D98;
+    border-radius: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vh;
+}
+
+.itemCardPadding {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.itemCard:hover {
+    transform: translateY(-5%);
+    box-shadow: 10px 10px 15px 2px rgba(0,0,100,.25);
+    transition: all 1s;
+}
+
+.itemCard:not(:hover) {
+    transform: translateY(5%); 
+    box-shadow: none;
+    transition: all 1s;
+}
+
+.itemCardName {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EDCCFF;
+    text-align: center;
+}
+
+.itemImage {
+    height: 25vh;
+}
+
+.itemImage:hover {
+    transform: rotate(180deg);
+    transition: all 4s;
+}
+
+.itemImage:not(:hover) {
+    transform: rotate(0deg);
+    transition: all 4s;
+}
+
+.itemPrice {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    color: #EDCCFF;
+    text-align: center;
+}
+
+.itemButton {
+    height: 5vh;
+    padding: 1vh;
+    background-color: #EDCCFF;
+    border: none;
+    color: #141D98;
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    border-radius: 8vh;
+    margin-top: 2vh;
+    margin-left: 3.75vh;
+}
+
+.itemButton:hover {
+    background-color: #FCB580;
+    color: #141D98;
+    box-shadow: 10px 10px 15px 2px rgba(0,0,0,.2);
+    transition: all 2s;
+}
+
+.itemButton:not(:hover) {
+    background-color: #EDCCFF;
+    color: #141D98;
+    transition: all 2s;
+}
