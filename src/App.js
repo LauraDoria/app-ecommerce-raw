@@ -14,7 +14,7 @@ function App() {
           <NavBar className='appNavBar' />
           <NavLink to='/list' className='appButton'>Ver Productos</NavLink>
           <div className='appButtonContainer'>
-            <NavLink to='/list' className='appButton'>Ver Galería</NavLink>
+            <NavLink to='/list' className='appButton'>Ver Galería Desafío 8</NavLink>
           </div>
           <Routes>
             <Route path='/list' element={<ItemListContainer message='* Nuestros Productos *' />} />
