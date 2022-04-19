@@ -1,18 +1,24 @@
 import './ItemDetail.css'
 import ProductCounter from '../ProductCounter/ProductCounter';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const addToCart = () => {
-    console.log("Los productos seleccionados se agregaron a tu carrito")
-}
+
 
 const ItemDetail = ({productDetails}) => {
+
+    const [quantity, setQuantity] = useState(0)
+    const addToCart = (count) => {
+        console.log("Los productos seleccionados se agregaron a tu carrito")
+        setQuantity(count)
+    }
 
     return(
         <div class='itemDetailContainerShadow'>
                 <div class='itemDetailImage'>
                     <img src={productDetails.imagenGrande} alt={productDetails.nombre}></img>
                     <ProductCounter stock={20} />
-                    <button class='addToCartButton' onClick={addToCart}>Agregar al carrito</button>
+                    {quantity >= 0 ? <Link to='/cart' class='addToCartButton'>Ir al carrito</Link> : <button class='addToCartButton' onClick={addToCart}>Agregar al carrito</button>}
                 </div>
                 <div class='itemDetailDetailContainer'>
                     <div class='itemDetailDetail'>
