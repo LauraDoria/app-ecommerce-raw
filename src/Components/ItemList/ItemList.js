@@ -3,18 +3,23 @@ import Item from '../Item/Item'; //Importa componente (default).
 
 
 const ItemList = ({products}) => { //Recibe propiedades desde componente contenedor.
+
+    
+
     return (
         <ul className='itemList'>
 
-        {products.map(product => <Item key={product.id} 
+        {products.map(product => <Item
 
-                                       nombre={product.nombre}
+                                    key={product.id} 
 
-                                       imagen={product.imagen}
+                                    nombre={product.nombre}
 
-                                       precio={product.precio}>                                          
+                                    imagen={product.imagen}
 
-                                       </Item>) /*Recibe las propiedades del componente padre y mapea cada elemento del array reibido, le asigna a cada Item las propiedades de un objeto/producto de la base de datos*/}
+                                    precio={product.precio}>  
+                                                                            
+                                </Item>) /*Recibe las propiedades del componente padre y mapea cada elemento del array reibido, le asigna a cada Item las propiedades de un objeto/producto de la base de datos*/}
 
         </ul>   
     ) //Retorna lo que se va a mostrar en pantalla
