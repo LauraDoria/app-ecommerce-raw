@@ -9,17 +9,17 @@ const ItemList = ({products}) => { //Recibe propiedades desde componente contene
     return (
         <ul className='itemList'>
 
-        {products.map(product => <Item
+            {products.map(product => <Item
 
-                                    key={product.id} 
+                key={product.id} 
 
-                                    nombre={product.nombre}
+                nombre={product.nombre}
 
-                                    imagen={product.imagen}
+                imagen={product.imagen}
 
-                                    precio={product.precio}>  
+                precio={product.precio}>  
                                                                             
-                                </Item>) /*Recibe las propiedades del componente padre y mapea cada elemento del array reibido, le asigna a cada Item las propiedades de un objeto/producto de la base de datos*/}
+            </Item>) /*Recibe las propiedades del componente padre y mapea cada elemento del array reibido, le asigna a cada Item las propiedades de un objeto/producto de la base de datos*/}
 
         </ul>   
     ) //Retorna lo que se va a mostrar en pantalla

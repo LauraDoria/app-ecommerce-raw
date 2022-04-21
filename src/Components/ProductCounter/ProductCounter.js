@@ -1,7 +1,11 @@
 import './ProductCounter.css';
-import { useState } from 'react';
+import { useState, useContext  } from 'react';
+import { Context } from '../../App';
+
+
 
 const ProductCounter = ({stock}) => {
+    const value = useContext(Context)
     const productCountState = useState(0);
     
     const increaseProductQuantity = () => {
