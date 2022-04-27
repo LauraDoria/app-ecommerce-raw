@@ -1,24 +1,27 @@
 import './ItemDetail.css'
 import ProductCounter from '../ProductCounter/ProductCounter';
-import { useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import CartContextProvider from '../CartContext/CartContext';
 
 
 
-const ItemDetail = ({productDetails}) => {
+const ItemDetail = ({...productDetails}) => {
 
-    const [quantity, setQuantity] = useState(0)
+    /*const [quantity, setQuantity] = useState(0)
     const addToCart = (count) => {
         console.log("Los productos seleccionados se agregaron a tu carrito")
         setQuantity(count)
-    }
+    }*/
+
+    const { addToCart, isInCart } = useContext(CartContextProvider)
 
     return(
         <div className='itemDetailContainerShadow'>
                 <div className='itemDetailImage'>
                     <img src={productDetails.imagenDetalle} alt={productDetails.nombre}></img>
                     <ProductCounter stock={20} />
-                    {quantity >= 0 ? <Link to='/cart' className='addToCartButton'>Agregar al carrito</Link> : <button className='addToCartButton' onClick={addToCart}>Agregar al carrito</button>}
+                    {isInCart(productDetails.id) ? <Link to='/cart' className='addToCartButton'>Ir al carrito</Link> : <button className='addToCartButton' onClick={addToCart}>Agregar al carrito</button>}
                 </div>
                 <div className='itemDetailDetailContainer'>
                     <div className='itemDetailDetail'>
@@ -35,13 +38,11 @@ const ItemDetail = ({productDetails}) => {
                         <p className='itemDetailDetailTipoProducto'>{productDetails.inci}</p>
                     </div>
                 </div>
-            </div>
+          </div>
     );
 
 };
 
-//{id, nombre, tipoProducto, tipoPiel, tipoCabello, usos, zeroWaste, precio, presentacion, imagenDetalle, detalle, modoUso, inci}
+//
 
 export default ItemDetail;
-
-            
