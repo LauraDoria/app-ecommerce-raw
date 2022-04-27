@@ -5,10 +5,11 @@
 
 .itemCard {
     height: 50vh;
-    width: 20vw;
+    width: 250px;
     background-color: #141D98;
     border-radius: 10vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -16,7 +17,6 @@
 }
 
 .itemCardPadding {
-    margin-top: 2vh;
     margin-bottom: 2vh;
 }
 
@@ -38,10 +38,13 @@
     font-style: normal;
     color: #EDCCFF;
     text-align: center;
+    font-size: 2.5vh;
+    max-width: 95%;
+    margin-left: 1vh;
 }
 
 .itemImage {
-    height: 25vh;
+    height: 23vh;
 }
 
 .itemImage:hover {
@@ -61,6 +64,7 @@
     font-size: 3vh;
     color: #EDCCFF;
     text-align: center;
+    padding: 2vh;
 }
 
 .itemButton {
@@ -74,12 +78,14 @@
     font-style: normal;
     font-size: 3vh;
     border-radius: 8vh;
-    margin-top: 2vh;
-    margin-left: 3.75vh;
+    margin-top: 3vh;
+    margin-left: 1vh;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .itemButton:hover {
-    background-color: #FCB580;
+    background-color: #12B5E3;
     color: #141D98;
     box-shadow: 10px 10px 15px 2px rgba(0,0,0,.2);
     transition: all 2s;

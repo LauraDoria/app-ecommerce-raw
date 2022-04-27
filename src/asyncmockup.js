@@ -11,6 +11,10 @@ const products = [
         precio: 450,
         presentacion: "50gr",
         imagen: "./Images/shampoo-cabello-graso.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -24,6 +28,10 @@ const products = [
         precio: 450, 
         presentacion: "50gr",
         imagen: "./Images/shampoo-cabello-seco.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Si tu pelo tiene tendencia a ser muy seco, quebradizo o con frizz o si fue sometido a tratamientos agresivos como tinturas, decoloraciones o uso constante de la planchita, nuestro shampoo con aceite de almendras dulces, formulado con mayor porcentaje de aceite y agregado de elastina ayudará a mantenerlo fuerte e hidratado. Con aroma a jazmín, rosas y benjuí.",
+        modoUso: "Frotá la pastilla entre tus manos o sobre el cabello mojado hasta generar la cantidad de espuma deseada. Masajeá el cuero cabelludo durante algunos minutos y luego enjuagá. Si tu cabello es muy seco, dejar algo de producto ayudará a mantenerlo hidratado. No olvides colocar el shampoo en un lugar seco después de usarlo para maximizar su duración.",
+        inci: "SCI (Sodium Cocoyl Isethionate), Hidrolato de Rosas (Rosa Damascena Flower Water), Aceite de Almendras Dulces (Prunus Amygdalus Dulcis Oil), Manteca de Karité (Butyrospermum Parkii Butter), Elastina Hidrolizada (Hydrolized Elastin, Phenoxyethanol / Ethylhexylglycerin), Proteína de Seda Hidrolizada (Hydrolized Silk Protein, Phenoxyethanol / Ethylhexylglycerin), Geogard®221 (Dehydroacetic Acid, Benzyl Alcohol), Vitamina E (Tocopherol Acetate), AE de Ylang Ylang (Cananga Odorata Oil), Esencia de Sándalo.",
     },
 
     {
@@ -37,6 +45,10 @@ const products = [
         precio: 500,
         presentacion: "50gr",
         imagen: "./Images/acondicionador-solido.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -50,6 +62,10 @@ const products = [
         precio: 700, 
         presentacion: "60ml",
         imagen: "./Images/aceite-jojoba.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -63,6 +79,10 @@ const products = [
         precio: 500,
         presentacion: "60ml",
         imagen: "./Images/aceite-almendras-dulces.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -76,6 +96,10 @@ const products = [
         precio: 600,
         presentacion: "60ml",
         imagen: "./Images/aceite-palta-coco.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -89,6 +113,10 @@ const products = [
         precio: 700,
         presentacion: "60ml",
         imagen: "./Images/blend-aceites.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -102,6 +130,10 @@ const products = [
         precio: 400,
         presentacion: "50gr",
         imagen: "./Images/limpiador-facial-pieles-grasas.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -115,6 +147,10 @@ const products = [
         precio: 400,
         presentacion: "50gr",
         imagen: "./Images/limpiador-facial-pieles-secas.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -128,6 +164,10 @@ const products = [
         precio: 400,
         presentacion: "50gr",
         imagen: "./Images/limpiador-facial-pieles-sensibles.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -141,6 +181,10 @@ const products = [
         precio: 800,
         presentacion: "125ml",
         imagen: "./Images/limpiador-facial-pieles-normales.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -154,6 +198,10 @@ const products = [
         precio: 600,
         presentacion: "60ml",
         imagen: "./Images/agua-rosas.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -167,6 +215,10 @@ const products = [
         precio: 600,
         presentacion: "60ml",
         imagen: "./Images/agua-lavanda.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -180,6 +232,10 @@ const products = [
         precio: 600,
         presentacion: "15cc",
         imagen: "./Images/serum-facial.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -193,6 +249,10 @@ const products = [
         precio: 1000,
         presentacion: "250cc",
         imagen: "./Images/body-lotion-piel-grasa.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -206,6 +266,10 @@ const products = [
         precio: 1000,
         presentacion: "250cc",
         imagen: "./Images/body-lotion-piel-seca.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -219,6 +283,10 @@ const products = [
         precio: 1000,
         presentacion: "250cc",
         imagen: "./Images/body-lotion-piel-madura.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -232,6 +300,10 @@ const products = [
         precio: 550,
         presentacion: "50gr",
         imagen: "./Images/arcilla-verde.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -245,6 +317,10 @@ const products = [
         precio: 550,
         presentacion: "50gr",
         imagen: "./Images/arcilla-blanca.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -258,6 +334,10 @@ const products = [
         precio: 550,
         presentacion: "50gr",
         imagen: "./Images/arcilla-roja.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -271,6 +351,10 @@ const products = [
         precio: 600,
         presentacion: "50gr",
         imagen: "./Images/arcilla-detox.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -284,6 +368,10 @@ const products = [
         precio: 500,
         presentacion: "x 1",
         imagen: "./Images/cofia-seda.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 
     {
@@ -297,6 +385,10 @@ const products = [
         precio: 200,
         presentacion: "x 1",
         imagen: "./Images/sujetador-seda.png",
+        imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
+        detalle: "Completar para la entrega final.",
+        modoUso: "Completar para la entrega final.",
+        inci: "Completar para la entrega final.",
     },
 ]
 

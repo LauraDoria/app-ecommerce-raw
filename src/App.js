@@ -6,6 +6,7 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import { createContext } from 'react';
+import CartContextProvider from './Components/CartContext/CartContext';
 
 export const Context = createContext()
 
@@ -13,15 +14,15 @@ function App() {
 
   return (
     <div className="App">
-      <Context.Provider value={123}>
+      <CartContextProvider value={123}>
         <header className="App-header">
           <BrowserRouter>
             <NavBar className='appNavBar' />
-            <NavLink to='/list' className='appButton'>Ver Productos</NavLink>
             <div className='appButtonContainer'>
               <NavLink to='/list' className='appButton'>Ver Galería</NavLink>
             </div>
             <Routes>
+              <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
               <Route path='/list' element={<ItemListContainer message='* Nuestros Productos *' />} />
               <Route path='/detail' element={<ItemDetailContainer />} />
             </Routes>
@@ -29,7 +30,7 @@ function App() {
           {/*<MercadoLibreItemListContainer title='Mercado Libre'/>*/}
           <img src='./Images/logo-icon.svg' className="App-logo" alt="logo" />
         </header>
-      </Context.Provider>
+      </CartContextProvider>
     </div>
   );
 }

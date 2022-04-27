@@ -14,31 +14,33 @@ const ItemDetail = ({productDetails}) => {
     }
 
     return(
-        <div class='itemDetailContainerShadow'>
-                <div class='itemDetailImage'>
-                    <img src={productDetails.imagenGrande} alt={productDetails.nombre}></img>
+        <div className='itemDetailContainerShadow'>
+                <div className='itemDetailImage'>
+                    <img src={productDetails.imagenDetalle} alt={productDetails.nombre}></img>
                     <ProductCounter stock={20} />
-                    {quantity >= 0 ? <Link to='/cart' class='addToCartButton'>Ir al carrito</Link> : <button class='addToCartButton' onClick={addToCart}>Agregar al carrito</button>}
+                    {quantity >= 0 ? <Link to='/cart' className='addToCartButton'>Agregar al carrito</Link> : <button className='addToCartButton' onClick={addToCart}>Agregar al carrito</button>}
                 </div>
-                <div class='itemDetailDetailContainer'>
-                    <div class='itemDetailDetail'>
-                        <h3 class='itemDetailDetailTitle'>{productDetails.nombre} {productDetails.presentacion} | ${productDetails.precio}</h3>
-                        <div class='itemDetailDetailFilter'>
-                            <p class='itemDetailDetailZeroWaste'>Zero Waste: {productDetails.zeroWaste}</p>
-                            <p class='itemDetailDetailTipoCabello'>Tipo Cabello: {productDetails.tipoCabello}</p>
-                            <p class='itemDetailDetailProductoUsos'>Tipo Producto: {productDetails.usos}</p>
+                <div className='itemDetailDetailContainer'>
+                    <div className='itemDetailDetail'>
+                        <h3 className='itemDetailDetailTitle'>{productDetails.nombre} {productDetails.presentacion} | ${productDetails.precio}</h3>
+                        <div className='itemDetailDetailFilter'>
+                            <p className='itemDetailDetailZeroWaste'>Zero Waste: {productDetails.zeroWaste}</p>
+                            <p className='itemDetailDetailTipoCabello'>Tipo Cabello: {productDetails.tipoCabello}</p>
+                            <p className='itemDetailDetailProductoUsos'>Tipo Producto: {productDetails.usos}</p>
                         </div>
-                        <p class='itemDetailDetailTipoProducto'>{productDetails.detalle}</p>
-                        <h3 class='itemDetailDetailSubtitle'>Modo de Uso</h3>
-                        <p class='itemDetailDetailTipoProducto'>{productDetails.modoUso}</p>
-                        <h3 class='itemDetailDetailSubtitle'>INCI</h3>
-                        <p class='itemDetailDetailTipoProducto'>{productDetails.inci}</p>
+                        <p className='itemDetailDetailTipoProducto'>{productDetails.detalle}</p>
+                        <h3 className='itemDetailDetailSubtitle'>Modo de Uso</h3>
+                        <p className='itemDetailDetailTipoProducto'>{productDetails.modoUso}</p>
+                        <h3 className='itemDetailDetailSubtitle'>INCI</h3>
+                        <p className='itemDetailDetailTipoProducto'>{productDetails.inci}</p>
                     </div>
                 </div>
             </div>
     );
 
 };
+
+//{id, nombre, tipoProducto, tipoPiel, tipoCabello, usos, zeroWaste, precio, presentacion, imagenDetalle, detalle, modoUso, inci}
 
 export default ItemDetail;
 
