@@ -1,15 +1,25 @@
 import './ItemListContainer.css'; //Importa archivo de estilos.
 import { useState, useEffect } from 'react'; //Importa hooks de la librería de react, useState almacena cambios de estado en componentes, useEffect me permite escribir código que se ejecute después del primer renderizado de la app.
 import ItemList from '../ItemList/ItemList'; //Importa componentes (default).
-import { getProductInfo } from '../../asyncmockup'; //Importa simulación de base de datos de productos (export nombrado).
+//import { getProductInfo } from '../../asyncmockup'; //Importa simulación de base de datos de productos (export nombrado).
+import { getDocs, collection } from 'firebase/firestore';
+import firestoreDataBase from '../../Services/Firebase';
 
 //Componente
 const ItemListContainer = (properties) => { //Recibe las propiedades asignadas al componente desde app.js
     const [products, setProducts] = useState([]) //useState para guardar en products los datos recibidos de getProductInfo, a través de la función setProducts()
 
     useEffect(() => {
-        getProductInfo().then(prods => { //Recibe promesa desde el getProductInfo importado de asyncmockup.js
+        /*getProductInfo().then(prods => { //Recibe promesa desde el getProductInfo importado de asyncmockup.js
             setProducts(prods) //Setea el estado de lo recibido.
+        })*/
+        getDocs(collection(firestoreDataBase, 'productsRaw')).then(respuesta => {
+            console.log(respuesta)
+            const productosDataBAse = respuesta.docs.map(doc => {
+                return { id: doc.id, ...doc.data()}
+            })
+            console.log(productosDataBAse)
+            setProducts(productosDataBAse)
         })
     }, []) //Se ejecuta después del primer renderizado.
 
