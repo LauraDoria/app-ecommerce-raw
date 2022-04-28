@@ -22,7 +22,7 @@ function App() {
             <BrowserRouter>
               <NavBar className='appNavBar' />
               <div className='appButtonContainer'>
-                <NavLink to='/list' className='appButton'>Ver Galería</NavLink>
+                <NavLink to='/list' className='appButton'>Ver Productos</NavLink>
               </div>
               <Routes>
                 <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
