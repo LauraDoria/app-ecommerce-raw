@@ -1,3 +1,6 @@
+//Array de objetos, simulación de base de datos de productos
+//Entrega final, agregar en cada producto la propiedad "stock", completar las propiedades faltantes.
+//Editar las imágenes grandes de las cards de detalle y cambiar color de fondo de las imágenes chicas.
 const products = [
 
     {
@@ -392,7 +395,20 @@ const products = [
     },
 ]
 
+//Exportar función getProductInfo, simulación de API
 export const getProductInfo = () => {
+    //Retorna promesa de respuesta a la petición de datos de productos
+    //Las Promise son objetos predefinidos del entorno de JS
+    /*"resolve" es el parámetro de la función que se pasa luego al bloque de código que se ejecuta
+    al recibir la respuesta, en este caso con el método .then de promesa resuelta correctamente. Se
+    escribe dentro de un setTimeOut para simular el tiempo que demora en procesarse una petición
+    real*/
+    /*El array de objetos "products" se pasa como argumento de "resolve", es decir, la base de datos
+    de productos es la respuesta a la petición del usuario.*/
+    //El tiempo está en milisegundos (3000ms = 3s)
+    /*La promesa resuelta como error también se puede trabajar como segundo argumento dentro del
+    método then(), sin usar el método catch()*/
+    //Método finally() siempre se ejecuta, usar con useState para crear un spinner (clase 5, 1 hora 40 minutos)
     return new Promise (resolve => {
         setTimeout(() => {
             resolve(products)
