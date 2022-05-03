@@ -26,7 +26,7 @@ function App() {
               </div>
               <Routes>
                 <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
-                <Route path='/list' element={<ItemListContainer message='* Nuestros Productos *' />} />
+                <Route path='/list' element={<ItemListContainer message='* Productos *' />} />
                 <Route path='/detail' element={<ItemDetailContainer />} />
                 <Route path='/cart' element={<Cart />} />
               </Routes>
