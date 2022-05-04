@@ -3,12 +3,18 @@ import CartContextProvider from "../CartContext/CartContext"
 import CartItem from "../CartItem/CartItem"
 import { Timestsamp, writeBatch, getDocs, collection, query, where, documentId, doc, addDoc } from "firebase/firestore"
 import firestoreDataBase from '../../Services/Firebase';
+import { useState } from "react";
 
 const Cart = () => {
+
+    const [loading, setLoading] = useState(false)
 
     const { cart, removeItemFromCart, cartTotal, cartItemQuantity } = useContext(CartContextProvider)
     
     const generarOrdenDeCompra = () => {
+
+        setLoading(true)
+
         const clientOrder = {
             items : cart,
             clientDetails : {
@@ -54,10 +60,14 @@ const Cart = () => {
             console.log("El nº de id de tu compra es " + id)
         }).catch(error => {
             console.log(error)
+        }).finally(() => {
+            setLoading(false)
         })
     }
 
-    
+    if(loading === true) {
+        <h3>Tu orden de compra está siendo procesada...</h3>
+    }
     
     if(cart.length === 0) {
         return (
