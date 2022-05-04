@@ -27,11 +27,11 @@ const ItemListContainer = (properties) => { //Recibe las propiedades asignadas a
         //Base de datos de Firebase
         /*getDocs(collection(firestoreDataBase, 'productsRaw')).then(respuesta => {
             console.log(respuesta)
-            const productosDataBAse = respuesta.docs.map(doc => {
+            const productosDataBase = respuesta.docs.map(doc => {
                 return { id: doc.id, ...doc.data()}
             })
-            console.log(productosDataBAse)
-            setProducts(productosDataBAse)
+            console.log(productosDataBase)
+            setProducts(productosDataBase)
         })*/
     }, []) //Se ejecuta después del primer renderizado.
 
