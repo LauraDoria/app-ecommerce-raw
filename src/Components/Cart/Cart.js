@@ -11,6 +11,15 @@ const Cart = () => {
 
     const { cart, removeItemFromCart, cartTotal, cartItemQuantity } = useContext(CartContextProvider)
     
+    const formClientData = []
+
+    const [client, setClient] = useState([])
+
+    const enviarDatosCliente = () => {
+        setClient(formClientData)
+        console.log(client)
+    }
+    
     const generarOrdenDeCompra = () => {
 
         setLoading(true)
@@ -83,13 +92,14 @@ const Cart = () => {
             <div>
                 <form>
                     <p>Nombre</p>
-                    <input type="text" placeholder="Nombre"></input>
+                    <input type="text" placeholder="Nombre" onChange={(e) => formClientData.push(e.target.value)}></input>
                     <p>Apellido</p>
-                    <input type="text" placeholder="Apellido"></input>
+                    <input type="text" placeholder="Apellido" onChange={(e) => formClientData.push(e.target.value)}></input>
                     <p>Dirección de correo electrónico</p>
-                    <input type="text" placeholder="eMail"></input>
+                    <input type="text" placeholder="eMail" onChange={(e) => formClientData.push(e.target.value)}></input>
                     <p>Domicilio</p>
-                    <input type="text" placeholder="Dirección"></input>
+                    <input type="text" placeholder="Dirección" onChange={(e) => formClientData.push(e.target.value)}></input>
+                    <input type='submit' onClick={() => enviarDatosCliente(formClientData)}>Enviar datos</input>
                 </form>
                 <button onClick={() => generarOrdenDeCompra()}>Crear orden de compra</button>
             </div>

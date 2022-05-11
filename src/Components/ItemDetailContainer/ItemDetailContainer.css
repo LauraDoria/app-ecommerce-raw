@@ -5,11 +5,10 @@
 
 .itemDetailContainer {
     background-color: #FCB580;
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100%;
+    overflow-y: visible;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }

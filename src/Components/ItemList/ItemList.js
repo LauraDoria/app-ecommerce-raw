@@ -20,7 +20,7 @@ const ItemList = ({products}) => {
             nombre con el que están guardadas en la base de datos.*/}
             {products.map(product => <Item
 
-                key={product.id} 
+                id={product.id} 
                 
                 nombre={product.nombre}
 

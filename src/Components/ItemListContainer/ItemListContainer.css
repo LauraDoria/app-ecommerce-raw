@@ -1,3 +1,8 @@
+.itemListContainer {
+    background-color: #FCB580;
+    width: 100%;
+}
+
 .selectedItemsContainer {
     display: flex;
     flex-direction: column;

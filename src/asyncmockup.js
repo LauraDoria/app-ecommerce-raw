@@ -6,7 +6,7 @@ const products = [
     {
         id: 1,
         nombre: "Shampoo Sólido Cabello Graso",
-        tipoProducto: "cuidado del cabello",
+        tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
         tipoCabello: "graso",
         usos: "limpieza",
@@ -15,15 +15,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/shampoo-cabello-graso.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 2, 
         nombre: "Shampoo Sólido Cabello Seco", 
-        tipoProducto: "cuidado del cabello", 
+        tipoProducto: "productoCapilar", 
         tipoPiel: "no disponible", 
         tipoCabello: "seco",
         usos: "limpieza",
@@ -40,7 +40,7 @@ const products = [
     {
         id: 3, 
         nombre: "Acondicionador Sólido para Todo Tipo de Cabello",
-        tipoProducto: "cuidado del cabello",
+        tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
         tipoCabello: "todos",
         usos: "limpieza",
@@ -49,83 +49,83 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/acondicionador-solido.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 4, 
         nombre: "Aceite Capilar de Jojoba", 
-        tipoProducto: "cuidado del cabello", 
+        tipoProducto: "productoCapilar", 
         tipoPiel: "no disponible", 
         tipoCabello: "graso", 
-        usos: "nutricion", 
+        usos: "nutrición", 
         zeroWaste: "NO",
         precio: 700, 
         presentacion: "60ml",
         imagen: "./Images/aceite-jojoba.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 5,
         nombre: "Aceite Capilar de Almendras Dulces",
-        tipoProducto: "cuidado del cabello",
+        tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
         tipoCabello: "normal",
-        usos: "nutricion",
+        usos: "nutrición",
         zeroWaste: "NO",
         precio: 500,
         presentacion: "60ml",
         imagen: "./Images/aceite-almendras-dulces.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 6,
         nombre: "Blend de Aceites Capilares Palta y Coco",
-        tipoProducto: "cuidado del cabello",
+        tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
         tipoCabello: "seco",
-        usos: "nutricion",
+        usos: "nutrición",
         zeroWaste: "NO",
         precio: 600,
         presentacion: "60ml",
         imagen: "./Images/aceite-palta-coco.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 7,
         nombre: "Blend de Aceites para el Cabello",
-        tipoProducto: "cuidado del cabello",
+        tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
         tipoCabello: "todos",
-        usos: "nutricion",
+        usos: "nutrición",
         zeroWaste: "NO",
         precio: 700,
         presentacion: "60ml",
         imagen: "./Images/blend-aceites.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 8,
         nombre: "Limpiador Facial Sólido Pieles Grasas",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "grasa",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -134,15 +134,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/limpiador-facial-pieles-grasas.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 9,
         nombre: "Limpiador Facial Sólido Pieles Secas",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "seca",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -151,15 +151,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/limpiador-facial-pieles-secas.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 10,
         nombre: "Limpiador Facial Sólido Pieles Sensibles",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "sensible",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -168,15 +168,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/limpiador-facial-pieles-sensibles.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 11,
         nombre: "Limpiador Facial Pieles Normales",
-        tipoProducto:"cuidado facial",
+        tipoProducto:"productoFacial",
         tipoPiel: "todos",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -185,83 +185,83 @@ const products = [
         presentacion: "125ml",
         imagen: "./Images/limpiador-facial-pieles-normales.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 12,
         nombre: "Agua de Rosas",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "todos",
         tipoCabello: "no disponible",
-        usos: "hidratacion",
+        usos: "hidratación",
         zeroWaste: "NO",
         precio: 600,
         presentacion: "60ml",
         imagen: "./Images/agua-rosas.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 13,
         nombre: "Agua de Lavanda",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "grasa",
         tipoCabello: "no disponible",
-        usos: "hidratacion",
+        usos: "hidratación",
         zeroWaste: "NO",
         precio: 600,
         presentacion: "60ml",
         imagen: "./Images/agua-lavanda.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 14,
         nombre: "Sérum Facial con Vitamina C",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "todos",
         tipoCabello: "no disponible",
-        usos: "nutricion",
+        usos: "nutrición",
         zeroWaste: "NO",
         precio: 600,
         presentacion: "15cc",
         imagen: "./Images/serum-facial.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 15,
         nombre: "Body Lotion Pieles Grasas",
-        tipoProducto: "cuidado corporal",
+        tipoProducto: "productoCorporal",
         tipoPiel: "grasa",
         tipoCabello: "no disponible",
-        usos: "hidratacion",
+        usos: "hidratación",
         zeroWaste: "NO",
         precio: 1000,
         presentacion: "250cc",
         imagen: "./Images/body-lotion-piel-grasa.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 16,
         nombre: "Body Lotion Pieles Secas",
-        tipoProducto: "cuidado corporal",
+        tipoProducto: "productoCorporal",
         tipoPiel: "seca",
         tipoCabello: "no disponible",
         usos: "hidratacion",
@@ -270,32 +270,32 @@ const products = [
         presentacion: "250cc",
         imagen: "./Images/body-lotion-piel-seca.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 17,
         nombre: "Body Lotion Pieles Maduras",
-        tipoProducto: "cuidado corporal",
+        tipoProducto: "productoCorporal",
         tipoPiel: "madura",
         tipoCabello: "no disponible",
-        usos: "hidratacion",
+        usos: "hidratación",
         zeroWaste: "NO",
         precio: 1000,
         presentacion: "250cc",
         imagen: "./Images/body-lotion-piel-madura.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 18,
         nombre: "Arcilla Verde",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "grasa",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -304,15 +304,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/arcilla-verde.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 19,
         nombre: "Arcilla Blanca",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "normal",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -321,15 +321,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/arcilla-blanca.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 20,
         nombre: "Arcilla Roja",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "seca",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -338,15 +338,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/arcilla-roja.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 21,
         nombre: "Arcilla Detox",
-        tipoProducto: "cuidado facial",
+        tipoProducto: "productoFacial",
         tipoPiel: "todos",
         tipoCabello: "no disponible",
         usos: "limpieza",
@@ -355,15 +355,15 @@ const products = [
         presentacion: "50gr",
         imagen: "./Images/arcilla-detox.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 22,
         nombre: "Cofia de Seda",
-        tipoProducto: "cuidado del cabello",
+        tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
         tipoCabello: "todos",
         usos: "otros",
@@ -372,15 +372,15 @@ const products = [
         presentacion: "x 1",
         imagen: "./Images/cofia-seda.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 
     {
         id: 23,
         nombre: "Sujetador de Cabello de Seda",
-        tipoProducto: "cuidado del cabello",
+        tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
         tipoCabello: "todos",
         usos: "otros",
@@ -389,14 +389,35 @@ const products = [
         presentacion: "x 1",
         imagen: "./Images/sujetador-seda.png",
         imagenDetalle: "./Images/shampoo-solido-seco-grande.png",
-        detalle: "Completar para la entrega final.",
-        modoUso: "Completar para la entrega final.",
-        inci: "Completar para la entrega final.",
+        detalle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+        modoUso: "Lorem ipsum dolor sit amet, consectetue adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputa.",
+        inci: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
     },
 ]
 
-//Exportar función getProductInfo, simulación de API
-export const getProductInfo = () => {
+const categories = [
+    {id: 1,path: '/category/productoCapilar', description: 'Productos Capilares'},
+    {id: 2,path: '/category/productoFacial', description: 'Productos Faciales'},
+    {id: 3,path: '/category/productoCorporal', description: 'Productos Corporales'},
+]
+
+//Exportar función getCategories, categorías de productos para navegación por categorías.
+export const getCategories = () => {
+    return new Promise (resolve => {
+        resolve(categories)
+    })
+}
+
+//Exportar función getProductList, simulación de API para galería de productos.
+export const getProductList = () => {
+    return new Promise (resolve => {
+        resolve(products)
+    })
+}
+
+
+//Exportar función getProductInfo, simulación de API para páginas de detalle de productos.
+export const getProductInfo = (id) => {
     //Retorna promesa de respuesta a la petición de datos de productos
     //Las Promise son objetos predefinidos del entorno de JS
     /*"resolve" es el parámetro de la función que se pasa luego al bloque de código que se ejecuta
@@ -410,8 +431,40 @@ export const getProductInfo = () => {
     método then(), sin usar el método catch()*/
     //Método finally() siempre se ejecuta, usar con useState para crear un spinner (clase 5, 1 hora 40 minutos)
     return new Promise (resolve => {
-        setTimeout(() => {
-            resolve(products)
-        }, 3000)
+        resolve(products.find(product => product.id == id))
     })
 }
+
+//Exportar función getProductList, simulación de API para galería de productos por categoría.
+export const getProductCategory = (category) => {
+    return new Promise (resolve => {
+        resolve(category ? products.filter(product => product.tipoProducto === category) : products)
+    })
+}
+
+/*
+export const getProducts = (categoryId) => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(categoryId ? products.filter(prod => prod.category === categoryId) : products)
+        }, 500)
+    })
+}
+
+
+
+
+
+setTimeout(() => {
+            resolve(products)
+        }, 100)
+.find(product => product.id === id)
+
+export const getProductsById = (id) => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 500)
+    })
+}
+*/

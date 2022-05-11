@@ -1,16 +1,32 @@
 import './NavBar.css';
+import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget';
+import { useState, useEffect } from 'react';
+import { getCategories } from '../../asyncmockup';
 
 const NavBar = () => {
+
+    const [categories, setCategories] = useState([])
+
+    useEffect(() => {
+        getCategories().then(categories => {
+            setCategories(categories) 
+        })
+    }, []) 
+
     return (
         <nav className='navBar'>
             <div className='logoMenu'>
-                <img src='../../Images/logo-icon.svg' alt='imagen logo' className='logoMenuImg'/>
-                <h1 className='logoMenuBrandName'>RÄW</h1>
+                <Link to='/home'>
+                    <img src='../../Images/music-toggle-pause-to-play.svg' alt='imagen logo' className='logoMenuImg imageOne'/>
+                    <img src='../../Images/music-toggle-play-to-pause.svg' alt='imagen logo' className='logoMenuImg imageTwo'/>
+                </Link>
+                <Link to='/home' className='logoMenuBrandName'>RÄW</Link>
             </div>
-                <p className='menuItem'>Productos Faciales</p>
-                <p className='menuItem'>Productos Capilares</p>
-                <p className='menuItem'>Productos Corporales</p>
+            {categories.map(category => <Link key={category.id} to={category.path} className='menuItem'>{category.description}</Link>)}
+            {/* <Link to={`/detail/productoFacial`} className='menuItem'>Productos Faciales</Link>
+            <Link to={`/category/productoCapilar`} className='menuItem'>Productos Capilares</Link>
+            <Link to={`/category/productoCorporal`} className='menuItem'>Productos Corporales</Link> */}
             <CartWidget />
         </nav>
     )

@@ -1,6 +1,5 @@
 .mercadoLibreItemListContainer {
-    height: 40vh;
-    width: 70vw;
+    width: 90vw;
     background-color: #12B5E3;
     border-radius: 10vh;
     margin: 5vh;
@@ -15,5 +14,15 @@
     font-family: piepie, sans-serif;
     font-weight: 400;
     font-style: normal;
-    height: 5vh;
+    font-size: 10vh;
+    padding-top: 5vh;
+}
+
+.mercadoLibreItemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5vh;
 }

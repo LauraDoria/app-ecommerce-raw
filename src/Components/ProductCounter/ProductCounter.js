@@ -1,11 +1,11 @@
 import './ProductCounter.css';
-import { useState, useContext  } from 'react';
-import { Context } from '../../App';
+//import { useState, useContext  } from 'react';
+//import { Context } from '../../App';
 
 
 
-const ProductCounter = ({stock}) => {
-    const value = useContext(Context)
+const ProductCounter = (/*{stock}*/) => {
+    /*const value = useContext(Context)
     const productCountState = useState(0);
     
     const increaseProductQuantity = () => {
@@ -26,7 +26,7 @@ const ProductCounter = ({stock}) => {
             <p>{productCountState[0]}</p>
             <button className='productCounterButton' onClick={decreaseProductQuantity}>-</button>
         </div>
-    )
+    )*/
 };
 
 export default ProductCounter;
