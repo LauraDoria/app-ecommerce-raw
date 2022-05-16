@@ -1,32 +1,47 @@
 import './ProductCounter.css';
-//import { useState, useContext  } from 'react';
-//import { Context } from '../../App';
+import { useState } from 'react';
+import { useNotification } from '../Notification/Notification';
 
+const ProductCounter = ({stock, addToCart, nombre, precio}) => {
 
+    const [productCount, setProductCount] = useState(0);
 
-const ProductCounter = (/*{stock}*/) => {
-    /*const value = useContext(Context)
-    const productCountState = useState(0);
+    const { notificationMessage } = useNotification
     
     const increaseProductQuantity = () => {
-        if (productCountState[0] < stock) {
-            productCountState[1](productCountState[0] + 1)
+        if (productCount < stock) {
+            setProductCount(productCount + 1)
         }
     };
 
     const decreaseProductQuantity = () => {
-        if (productCountState[0] > 0) {
-            productCountState[1](productCountState[0] - 1)
+        if (productCount > 0) {
+            setProductCount(productCount - 1)
+        }
+    }
+
+    const notificationMessageHandle = () => {
+        if(productCount !== 0) {
+            const messageToSend = `Se agregaron ${productCount} unidades de ${nombre} por un total de $${productCount*precio}`
+            notificationMessage(messageToSend)
+        } else {
+            console.log('No se agregaron productos.')
         }
     }
 
     return (
-        <div className='productCounter'>
-            <button className='productCounterButton' onClick={increaseProductQuantity}>+</button>
-            <p>{productCountState[0]}</p>
-            <button className='productCounterButton' onClick={decreaseProductQuantity}>-</button>
+        <div className='itemDetailCounterContainer'>
+            <div className='productCounter'>
+                <button className='productCounterButton' onClick={increaseProductQuantity}>+</button>
+                <p className='productCounterCount'>{productCount}</p>
+                <button className='productCounterButton' onClick={decreaseProductQuantity}>-</button>
+            </div>
+            <button className='addToCartButton' onClick={() =>{
+                addToCart(productCount)
+                notificationMessageHandle()
+            }}>Agregar al carrito</button>
         </div>
-    )*/
+    )
 };
 
 export default ProductCounter;

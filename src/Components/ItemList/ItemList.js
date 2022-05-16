@@ -4,8 +4,6 @@ import Item from '../Item/Item'; //Importa componente (default).
 /*Recibe propiedades desde componente contenedor (el estado guardado en el array "products").*/
 const ItemList = ({products}) => { 
 
-    
-
     return (
         <ul className='itemList'>
             {/*Recibe como argumento las propiedades del componente padre ItemListcontainer, del

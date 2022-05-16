@@ -1,10 +1,10 @@
 //Array de objetos, simulación de base de datos de productos
-//Entrega final, agregar en cada producto la propiedad "stock", completar las propiedades faltantes.
 //Editar las imágenes grandes de las cards de detalle y cambiar color de fondo de las imágenes chicas.
 const products = [
 
     {
         id: 1,
+        stock: 20,
         nombre: "Shampoo Sólido Cabello Graso",
         tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
@@ -21,7 +21,8 @@ const products = [
     },
 
     {
-        id: 2, 
+        id: 2,
+        stock: 20,
         nombre: "Shampoo Sólido Cabello Seco", 
         tipoProducto: "productoCapilar", 
         tipoPiel: "no disponible", 
@@ -38,7 +39,8 @@ const products = [
     },
 
     {
-        id: 3, 
+        id: 3,
+        stock: 20,
         nombre: "Acondicionador Sólido para Todo Tipo de Cabello",
         tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
@@ -55,7 +57,8 @@ const products = [
     },
 
     {
-        id: 4, 
+        id: 4,
+        stock: 15,
         nombre: "Aceite Capilar de Jojoba", 
         tipoProducto: "productoCapilar", 
         tipoPiel: "no disponible", 
@@ -73,6 +76,7 @@ const products = [
 
     {
         id: 5,
+        stock: 15,
         nombre: "Aceite Capilar de Almendras Dulces",
         tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
@@ -90,6 +94,7 @@ const products = [
 
     {
         id: 6,
+        stock: 15,
         nombre: "Blend de Aceites Capilares Palta y Coco",
         tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
@@ -107,6 +112,7 @@ const products = [
 
     {
         id: 7,
+        stock: 15,
         nombre: "Blend de Aceites para el Cabello",
         tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
@@ -124,6 +130,7 @@ const products = [
 
     {
         id: 8,
+        stock: 20,
         nombre: "Limpiador Facial Sólido Pieles Grasas",
         tipoProducto: "productoFacial",
         tipoPiel: "grasa",
@@ -141,6 +148,7 @@ const products = [
 
     {
         id: 9,
+        stock: 20,
         nombre: "Limpiador Facial Sólido Pieles Secas",
         tipoProducto: "productoFacial",
         tipoPiel: "seca",
@@ -158,6 +166,7 @@ const products = [
 
     {
         id: 10,
+        stock: 20,
         nombre: "Limpiador Facial Sólido Pieles Sensibles",
         tipoProducto: "productoFacial",
         tipoPiel: "sensible",
@@ -175,6 +184,7 @@ const products = [
 
     {
         id: 11,
+        stock: 15,
         nombre: "Limpiador Facial Pieles Normales",
         tipoProducto:"productoFacial",
         tipoPiel: "todos",
@@ -192,6 +202,7 @@ const products = [
 
     {
         id: 12,
+        stock: 30,
         nombre: "Agua de Rosas",
         tipoProducto: "productoFacial",
         tipoPiel: "todos",
@@ -209,6 +220,7 @@ const products = [
 
     {
         id: 13,
+        stock: 30,
         nombre: "Agua de Lavanda",
         tipoProducto: "productoFacial",
         tipoPiel: "grasa",
@@ -226,6 +238,7 @@ const products = [
 
     {
         id: 14,
+        stock: 10,
         nombre: "Sérum Facial con Vitamina C",
         tipoProducto: "productoFacial",
         tipoPiel: "todos",
@@ -243,6 +256,7 @@ const products = [
 
     {
         id: 15,
+        stock: 25,
         nombre: "Body Lotion Pieles Grasas",
         tipoProducto: "productoCorporal",
         tipoPiel: "grasa",
@@ -260,11 +274,12 @@ const products = [
 
     {
         id: 16,
+        stock: 25,
         nombre: "Body Lotion Pieles Secas",
         tipoProducto: "productoCorporal",
         tipoPiel: "seca",
         tipoCabello: "no disponible",
-        usos: "hidratacion",
+        usos: "hidratación",
         zeroWaste: "NO",
         precio: 1000,
         presentacion: "250cc",
@@ -277,6 +292,7 @@ const products = [
 
     {
         id: 17,
+        stock: 25,
         nombre: "Body Lotion Pieles Maduras",
         tipoProducto: "productoCorporal",
         tipoPiel: "madura",
@@ -294,6 +310,7 @@ const products = [
 
     {
         id: 18,
+        stock: 20,
         nombre: "Arcilla Verde",
         tipoProducto: "productoFacial",
         tipoPiel: "grasa",
@@ -311,6 +328,7 @@ const products = [
 
     {
         id: 19,
+        stock: 20,
         nombre: "Arcilla Blanca",
         tipoProducto: "productoFacial",
         tipoPiel: "normal",
@@ -328,6 +346,7 @@ const products = [
 
     {
         id: 20,
+        stock: 20,
         nombre: "Arcilla Roja",
         tipoProducto: "productoFacial",
         tipoPiel: "seca",
@@ -345,6 +364,7 @@ const products = [
 
     {
         id: 21,
+        stock: 20,
         nombre: "Arcilla Detox",
         tipoProducto: "productoFacial",
         tipoPiel: "todos",
@@ -362,6 +382,7 @@ const products = [
 
     {
         id: 22,
+        stock: 40,
         nombre: "Cofia de Seda",
         tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
@@ -379,6 +400,7 @@ const products = [
 
     {
         id: 23,
+        stock: 50,
         nombre: "Sujetador de Cabello de Seda",
         tipoProducto: "productoCapilar",
         tipoPiel: "no disponible",
@@ -396,9 +418,9 @@ const products = [
 ]
 
 const categories = [
-    {id: 1,path: '/category/productoCapilar', description: 'Productos Capilares'},
-    {id: 2,path: '/category/productoFacial', description: 'Productos Faciales'},
-    {id: 3,path: '/category/productoCorporal', description: 'Productos Corporales'},
+    {id: 1, path: '/category/productoCapilar', description: 'Productos Capilares'},
+    {id: 2, path: '/category/productoFacial', description: 'Productos Faciales'},
+    {id: 3, path: '/category/productoCorporal', description: 'Productos Corporales'},
 ]
 
 //Exportar función getCategories, categorías de productos para navegación por categorías.

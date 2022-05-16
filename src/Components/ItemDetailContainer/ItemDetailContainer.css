@@ -12,3 +12,45 @@
     align-items: center;
     width: 100%;
 }
+
+.navigateGallery {
+    height: 30vh;
+    width: 100%;
+    background-color: #12B5E3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigateGalleryButton {
+    font-family: piepie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 8vh;
+    width: 30vh;
+    background-color: #141D98;
+    border: none;
+    color: #EDCCFF;
+    font-size: 3vh;
+    border-radius: 8vh;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}
+
+.navigateGalleryButton:hover {
+    background-color: #FCB580;
+    color: #141D98;
+    box-shadow: 7px 7px 10px 2px rgba(0,0,100,.25);
+    transition: all 2s;
+}
+
+.navigateGalleryButton:not(:hover) {
+    background-color: #141D98;
+    color: #EDCCFF;
+    transition: all 2s;
+}

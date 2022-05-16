@@ -1,8 +1,10 @@
 import './NavBar.css';
-import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import { getCategories } from '../../asyncmockup';
+import firestoreDataBase from '../../Services/Firebase';
+import { getDocs, collection } from 'firebase/firestore';
 
 const NavBar = () => {
 
@@ -12,6 +14,17 @@ const NavBar = () => {
         getCategories().then(categories => {
             setCategories(categories) 
         })
+
+        //Usar orderBy por "description"
+        /*getDocs(collection(firestoreDataBase, 'categoriesRaw')).then(respuesta => {
+            console.log(respuesta)
+            const categoriesDataBase = respuesta.docs.map(doc => {
+                return { id: doc.id, ...doc.data()}
+            })
+            console.log(categoriesDataBase)
+            setCategories(categoriesDataBase)
+            console.log(categories)
+        })*/
     }, []) 
 
     return (
@@ -24,10 +37,9 @@ const NavBar = () => {
                 <Link to='/home' className='logoMenuBrandName'>RÄW</Link>
             </div>
             {categories.map(category => <Link key={category.id} to={category.path} className='menuItem'>{category.description}</Link>)}
-            {/* <Link to={`/detail/productoFacial`} className='menuItem'>Productos Faciales</Link>
-            <Link to={`/category/productoCapilar`} className='menuItem'>Productos Capilares</Link>
-            <Link to={`/category/productoCorporal`} className='menuItem'>Productos Corporales</Link> */}
-            <CartWidget />
+            <Link className='menuItem' to='/cart'>
+                <CartWidget />
+            </Link>
         </nav>
     )
 };

@@ -1,13 +1,23 @@
-import { useContext } from "react"
-import CartContextProvider from "../CartContext/CartContext"
+
+import './Cart.css'
+import NavBar from "../NavBar/NavBar"
+import Footer from "../Footer/Footer"
 import CartItem from "../CartItem/CartItem"
+import ClientPurchaseForm from "../ClientPurchaseForm/ClientPurchaseForm"
+import { Link } from 'react-router-dom'
+import { useState, useContext } from "react";
+import CartContext from '../../Context/CartContext'
 import { Timestsamp, writeBatch, getDocs, collection, query, where, documentId, doc, addDoc } from "firebase/firestore"
 import firestoreDataBase from '../../Services/Firebase';
-import { useState } from "react";
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner'
 
 const Cart = () => {
 
-    const [loading, setLoading] = useState(false)
+    const { cart, clearCart, cartTotal, getProductQuantity } = useContext(CartContext)
+
+    console.log(cart)
+
+    /*const [loading, setLoading] = useState(false)
 
     const { cart, removeItemFromCart, cartTotal, cartItemQuantity } = useContext(CartContextProvider)
     
@@ -82,29 +92,78 @@ const Cart = () => {
         return (
             <h3>Tu carrito está vacío!</h3>
         )
+    } else {*/
+
+    const [showForm, setShowForm] = useState('hide')
+
+    const formHandle = () => {
+        setShowForm('show')
+    }
+
+    if(cart.length === 0) {
+        return(
+            <section className="cartContainer">
+                <NavBar />
+                <div className='cart'>
+                    <h2 className='cartTitle'>* Tu Carrito *</h2>
+                    <div className='emptyCartContainer'>
+                        <h3 className='emptyCartTitle'>Tu Carrito está vacío!</h3>
+                        <Link className='cartButtonTwo' to='/list'>Volver a Productos</Link>
+                    </div> 
+                </div>
+                <Footer />
+            </section>
+        ) 
     } else {
         return (
-        <div>
-            <h1>Tu carrito</h1>
-            <ul>
-                {cart.map(producto => <CartItem key={producto.id}>{producto.imagen} Nombre: {producto.nombre}  cantidad: {cartItemQuantity(producto)} precio: {producto.precio}  subtotal: {cartItemQuantity(producto) * producto.precio} <button onClick={() => removeItemFromCart(producto.id)}>X</button></CartItem>)}   
-            </ul>
-            <div>
-                <form>
-                    <p>Nombre</p>
-                    <input type="text" placeholder="Nombre" onChange={(e) => formClientData.push(e.target.value)}></input>
-                    <p>Apellido</p>
-                    <input type="text" placeholder="Apellido" onChange={(e) => formClientData.push(e.target.value)}></input>
-                    <p>Dirección de correo electrónico</p>
-                    <input type="text" placeholder="eMail" onChange={(e) => formClientData.push(e.target.value)}></input>
-                    <p>Domicilio</p>
-                    <input type="text" placeholder="Dirección" onChange={(e) => formClientData.push(e.target.value)}></input>
-                    <input type='submit' onClick={() => enviarDatosCliente(formClientData)}>Enviar datos</input>
-                </form>
-                <button onClick={() => generarOrdenDeCompra()}>Crear orden de compra</button>
-            </div>
-        </div>
-    )}
+            <section className="cartContainer">
+                <NavBar />
+                <div className='cart'>
+                    <h2 className='cartTitle'>* Tu Carrito *</h2>
+                    <ul className='cartRows'>
+                        {cart.map(producto => <CartItem
+    
+                            id={producto.id}
+                                                    
+                            nombre={producto.nombre}
+                                                    
+                            presentacion={producto.presentacion}
+                                                    
+                            cantidad={producto.cantidad}
+                                                    
+                            subtotal={producto.subtotal} />)}
+    
+                        <div className='cartTotal'>
+                            <div className='cartTotalContainer'>
+                                <div className='cartTotalItem itemUno'><h3 className='cartTotalTitle'>Total Unidades</h3></div>
+                                <div className='cartTotalItem itemDos'><h3 className='cartTotalTitle'>Total</h3></div>
+                            </div>
+                            <hr className='cartRuler' />
+                            <div className='cartTotalContainer'>
+                                <div className='cartTotalItem itemUno'><p className='cartTotalValue'>{ getProductQuantity() }</p></div>
+                                <div className='cartTotalItem itemDos'><p className='cartTotalValue'>{ cartTotal() }</p></div>
+                            </div>
+                        </div>
+                        <button className='cartButtonTwo' onClick={() => {
+                            clearCart()
+                            console.log(cart)
+                        }}>Vaciar Carrito</button>
+                    </ul>
+                    <div className='formContainer'>
+                        {showForm === 'hide'? <button className='cartButton' onClick={formHandle}>Comprar</button> :
+                            <ClientPurchaseForm />
+                        }
+                        {/* {showForm === 'hide'? null : <button className='cartButton pagar'>Pagar</button>} */}
+                        
+                        {/* <button onClick={() => generarOrdenDeCompra()}>Crear orden de compra</button> */}
+                    </div>
+                </div>
+                <Footer />
+            </section>
+        )
+    }
+
+        
 }
 
 export default Cart

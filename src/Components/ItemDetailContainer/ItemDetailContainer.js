@@ -1,10 +1,13 @@
 import './ItemDetailContainer.css'
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
-import { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail';
+import Notification from '../Notification/Notification';
+import { useState, useEffect } from 'react'
 import { getProductInfo } from '../../asyncmockup';
 import { Link, useParams } from 'react-router-dom';
+import firestoreDataBase from '../../Services/Firebase';
+import { getDoc, doc, query, where, limit } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
 
@@ -29,25 +32,41 @@ const ItemDetailContainer = () => {
             console.log(error)
         })
 
+        /*Importar limit de firebase, se agrega como parámetro a la query para limitar el número
+        de resultados que arroja el filtro, usar para crear componente "ProductosSimilares" que
+        vaya dentro de ItemDetailContainer. Buscar productos con el mismo tipoProducto que el del
+        Id
+        Usar el mismo código que ItemListContainer, con esta modificación:
+        query(collection(firestoreDataBase, 'productsRaw'), where('tipoProducto', '==', tipoProducto), limit(3))*/
         //Base de datos de Firebase
-        /*getDocs(collection(firestoreDataBase, 'productsRaw')).then(respuesta => {
+        /*getDoc(doc(firestoreDataBase, 'productsRaw', productId)).then(respuesta => {
             console.log(respuesta)
-            const productosDataBase = respuesta.docs.map(doc => {
-                return { id: doc.id, ...doc.data()}
-            })
-            console.log(productosDataBase)
-            setProducts(productosDataBase)
-        })*/
-    }, []) //Se ejecuta después del primer renderizado.
+            const productoDataBase = { id: respuesta.id, ...respuesta.data() }
+            console.log(productoDataBase)
+            setProductDetails(productoDataBase)
+        })
+        
+        return(() => {
+                setProduct()
+            }    
+        )*/
+    }, [productId]) //Se ejecuta después del primer renderizado.
 
     return(
         <section className='itemDetailContainer'>
 
             <NavBar />
+
+            <div className='navigateGallery'>
+                <Link className='navigateGalleryButton' to='/list'>Volver a Productos</Link>
+                <Link className='navigateGalleryButton' to='/cart'>Ir al Carrito</Link>
+            </div>
+
+            <Notification />
             
-            {/*{productDetails.map(product => */}<ItemDetail
+            <ItemDetail
                 
-                key={productDetails.id} 
+                id={productDetails.id} 
     
                 nombre={productDetails.nombre}
 
@@ -71,7 +90,9 @@ const ItemDetailContainer = () => {
 
                 modoUso={productDetails.modoUso}
 
-                inci={productDetails.inci}/>{/*})}*/}
+                inci={productDetails.inci}
+                
+                stock={productDetails.stock} />
 
             <Footer />
 
