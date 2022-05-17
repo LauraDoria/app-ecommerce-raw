@@ -119,6 +119,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .cartTotal {
@@ -178,9 +179,13 @@
     height: 50vh;
     background-color: #FCB580;
     border-radius: 10vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     box-shadow: 15px 15px 30px 2px rgba(0,0,0,.25);
+}
+
+.emptyCartContainer img {
+    height: 30vh;
 }
 
 .emptyCartTitle {

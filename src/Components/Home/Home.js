@@ -1,5 +1,5 @@
 import './Home.css'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -11,7 +11,6 @@ const Home = () => {
                     <img src='../../Images/music-toggle-play-to-pause.svg' alt='imagen logo' className='logoHomeImg homeImageTwo'/>
                 </Link>
             </div>
-            {/* <Link to='/list' className='link'>RÄW</Link> */}
         </section>
     )
 }

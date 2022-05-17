@@ -4,7 +4,7 @@ import CartContext from '../../Context/CartContext'
 
 const CartItem = ({ id, nombre, presentacion, cantidad, subtotal }) => {
 
-    const { cart, removeItemFromCart } = useContext(CartContext)
+    const { removeItemFromCart } = useContext(CartContext)
 
     return(
         <div className="cartRow">

@@ -2,29 +2,20 @@ import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
-import { getCategories } from '../../asyncmockup';
 import firestoreDataBase from '../../Services/Firebase';
-import { getDocs, collection } from 'firebase/firestore';
+import { getDocs, collection, query, orderBy } from 'firebase/firestore';
 
 const NavBar = () => {
 
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
-        getCategories().then(categories => {
-            setCategories(categories) 
-        })
-
-        //Usar orderBy por "description"
-        /*getDocs(collection(firestoreDataBase, 'categoriesRaw')).then(respuesta => {
-            console.log(respuesta)
+        getDocs(query(collection(firestoreDataBase, 'categoriesRaw'), orderBy('numeroOrden', 'asc'))).then(respuesta => {
             const categoriesDataBase = respuesta.docs.map(doc => {
                 return { id: doc.id, ...doc.data()}
             })
-            console.log(categoriesDataBase)
             setCategories(categoriesDataBase)
-            console.log(categories)
-        })*/
+        })
     }, []) 
 
     return (

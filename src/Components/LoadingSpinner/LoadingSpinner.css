@@ -13,8 +13,8 @@
   white-space: nowrap;
 } 
   
-  @media (prefers-reduced-motion: no-preference) {
-    .loadingSpinner {
-      animation: App-logo-spin infinite 5s linear;
-    }
+@media (prefers-reduced-motion: no-preference) {
+  .loadingSpinner {
+    animation: App-logo-spin infinite 5s linear;
   }
+}

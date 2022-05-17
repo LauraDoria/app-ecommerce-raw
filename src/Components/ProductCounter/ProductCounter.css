@@ -53,7 +53,7 @@
     transition: all 2s;
 }
 
-.addToCartButton {
+.addToCartProductCounterButtonn {
     font-family: piepie, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -65,15 +65,15 @@
     text-decoration: none;
     padding: 1.5vh;
     margin: 3vh;
-  }
+}
   
-  .addToCartButton:hover {
+.addToCartProductCounterButton:hover {
     background-color: #EDCCFF;
     box-shadow: 10px 10px 15px 2px rgba(0,0,100,.25);
     transition: all 2s;
-  }
+}
   
-  .addToCartButton:not(:hover) {
+.addToCartProductCounterButton:not(:hover) {
     background-color: #FCB580;
     transition: all 2s;
-  }
+}

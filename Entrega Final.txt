@@ -1,7 +1,0 @@
--Landing simple, sólo el logo animado y el nombre, al hacer click animación de transición a la galería de productos y el 
-nav con el cual se puede navegar filtrando por categorías los productos
-
--Corregir colores de fondo de imágenes de productos para galería y Cart
--Imágenes de producto para Item Detail Card
--Imagen spinner loading..
--Menu desplgeable con distintas categorías de productos

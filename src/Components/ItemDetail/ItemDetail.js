@@ -1,44 +1,68 @@
 import './ItemDetail.css'
-import ProductCounter from '../ProductCounter/ProductCounter';
-import { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import CartContext from '../../Context/CartContext';
-
-
+import ProductCounter from '../ProductCounter/ProductCounter'
+import { Link } from 'react-router-dom'
+import { useContext, useState } from 'react'
+import CartContext from '../../Context/CartContext'
 
 const ItemDetail = ({ id, nombre, imagenDetalle, precio, tipoPiel, tipoCabello, usos, zeroWaste, presentacion, detalle, modoUso, inci, stock }) => {
-
-    //Traer cantidad ya agregada del mismo producto, pasarla por props al contador para que en caso de querer agregar mas unidades del producto, el contador inicialice con la cantidad ya en carrito.
     
-    const { addProductToCart, isInCart, cart, removeItemFromCart } = useContext(CartContext)
+    const { addProductToCart, isInCart, removeItemFromCart } = useContext(CartContext)
+
+    const [productMessageToSend, setProductMessageToSend] = useState('noMessage')
 
     const addToCart = (productCount) => {
+        const productDetail = {
 
-        const productDetail = {id: id, nombre: nombre, presentacion: presentacion, precio: precio, cantidad: productCount, subtotal: productCount * precio}
+            id: id,
+
+            nombre: nombre,
+
+            presentacion: presentacion,
+
+            precio: precio,
+
+            cantidad: productCount,
+
+            subtotal: productCount * precio
+
+        }
         
         if(productCount !== 0) {
-            addProductToCart(productDetail)
-            console.log(`Se agregaron ${productDetail.cantidad} unidades de ${productDetail.nombre} por un total de $${productDetail.subtotal}.`)
+             addProductToCart(productDetail)
+             if(productCount === 1) {
+                setProductMessageToSend(`Agregaste ${productDetail.cantidad} unidad de ${nombre} por $${productDetail.subtotal} a tu Carrito!`)
+             } else {
+                setProductMessageToSend(`Agregaste ${productDetail.cantidad} unidades de ${nombre} por $${productDetail.subtotal} a tu Carrito!`)
+             }
         } else {
-            alert('No agregaste ningún producto!')
-            console.log('No se agregaron productos.')
+            setProductMessageToSend('No agregaste ningún producto!')
         }
+    }
 
-        console.log(cart)
-
+    const dismiss = () => {
+        setProductMessageToSend('noMessage')
     }
 
     return(
-        <article className='itemDetailContainerShadow'>
+        <article className='itemDetailOuterContainer'>
+            {productMessageToSend !== 'noMessage'? <div className='productNotificationContainer'>
+                <h5 className='productNotificationMessage'>{productMessageToSend}</h5>
+                <input type="button" value="X" className="productNotificationDismissButton" onClick={dismiss} />
+            </div> :
+            null}
+            <div className='itemDetailContainerShadow'>
                 <div className='itemDetailImage'>
                     <img src={imagenDetalle} alt={nombre}></img>
                     {isInCart(id) === false?
                         <div className='itemDetailCounterContainer'>
-                            <ProductCounter stock={stock} addToCart={addToCart} nombre={nombre} precio={precio} />
+                            <ProductCounter stock={stock} addToCart={addToCart} />
                         </div> :
                         <div className='inCartButtons'>
-                            <button className='addToCartButton' onClick={() => removeItemFromCart(id)}>Eliminar del Carrito</button>
-                            <Link to='/cart' className='addToCartButton'>Ir al carrito</Link>
+                            <button className='addToCartProductDetailButton' onClick={() => {
+                                removeItemFromCart(id)
+                                setProductMessageToSend(`Eliminaste ${nombre} de tu Carrito!`)
+                            }}>Eliminar del Carrito</button>
+                            <Link to='/cart' className='addToCartProductDetailButton'>Ir al carrito</Link>
                         </div>
                     }
                 </div>
@@ -58,9 +82,9 @@ const ItemDetail = ({ id, nombre, imagenDetalle, precio, tipoPiel, tipoCabello, 
                         <p className='itemDetailDetailTipoProducto'>{inci}</p>
                     </div>
                 </div>
-          </article>
+            </div>
+        </article>
     );
-
 };
 
 export default ItemDetail;
